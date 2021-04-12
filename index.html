@@ -34,6 +34,7 @@
         <div class="content" id="simpsons"></div>
       </div>
     </section>
+    <button id="changeQuote">Change quote</button>
 
     <!-- We need to load axios first! -->
     <script
@@ -62,6 +63,10 @@
       }
 
       fetchSimpsonsQuotes();
+
+      document
+        .querySelector('#changeQuote')
+        .addEventListener('click', fetchSimpsonsQuotes);
     </script>
   </body>
 </html>
